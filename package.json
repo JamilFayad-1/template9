@@ -1,0 +1,16 @@
+{
+  "name": "sole-creative-production",
+  "version": "1.0.0",
+  "private": true,
+  "description": "SOL\u00cb, an independent creative production portfolio concept",
+  "scripts": {
+    "dev": "python3 -m http.server 4173 --directory dist",
+    "check": "node --check dist/app.js && node --check dist/disclosures.js",
+    "pages": "python3 scripts/build-pages.py",
+    "build": "python3 scripts/build-pages.py && node scripts/build-vendor.mjs"
+  },
+  "dependencies": {
+    "lenis": "1.3.27"
+  },
+  "type": "module"
+}
