@@ -1,0 +1,81 @@
+/* Phase two: three standalone pages, built around the original SOLË identity. */
+.page-gutter{padding-left:var(--gutter);padding-right:var(--gutter)}.page-eyebrow{border-top:1px solid var(--line);padding-top:14px;display:flex;justify-content:space-between;gap:30px;font-size:11px}.page-title{font-size:clamp(86px,12vw,200px);line-height:.94;letter-spacing:-.082em;font-weight:400}.site-header a[aria-current="page"]::after{transform:scaleX(1)}main:focus{outline:0}.menu-dialog nav{margin-top:20px}.menu-dialog nav>a,.menu-dialog nav>button{font-size:clamp(48px,7.2vw,125px);line-height:1.18}.menu-dialog>p{margin-top:35px}
+.archive-intro{padding-top:42px}.archive-hero{display:grid;grid-template-columns:1fr 1fr;gap:10%;margin-top:58px;align-items:center}.archive-title{align-self:start;padding-top:5px}.archive-title>p{max-width:285px;font-size:16px;line-height:1.4;margin-top:45px}.archive-title>.text-link{font-size:12px;margin-top:30px}.archive-portrait{width:100%;max-width:660px;justify-self:end;margin:0}.archive-portrait-image{aspect-ratio:4/5;object-fit:cover;object-position:center 25%}.archive-list{padding-top:145px}.archive-list-heading{border-top:1px solid var(--line);padding-top:40px;display:flex;align-items:end;justify-content:space-between;margin-bottom:50px;gap:40px}.archive-list-heading h2{font-size:clamp(38px,5vw,80px);line-height:1.04;letter-spacing:-.06em}.archive-list-heading .filters{margin:0}.page-next{margin-top:130px;border-top:1px solid var(--line);padding-top:30px;display:flex;flex-direction:column;gap:30px}.page-next>span{font-size:12px}.page-next>a{font-size:clamp(40px,6vw,100px);line-height:1.1;letter-spacing:-.06em;display:flex;align-items:center;justify-content:space-between;gap:50px}.page-next>a>span{transition:transform .6s var(--ease)}.page-next>a:hover>span{transform:translate(8px,-8px)}
+.studio-intro{padding-top:42px}.studio-hero{display:grid;grid-template-columns:1fr 1fr;gap:0;position:relative;margin-top:55px;min-height:630px}.studio-title{z-index:1;position:relative}.studio-title .page-title{font-size:clamp(92px,12.6vw,205px)}.studio-title>p{font-size:15px;line-height:1.3;margin:40px 0 0 6px}.orbit-figure{display:flex;flex-direction:column;margin-top:-25px;min-width:0}.orbit-scene{flex:1;min-height:490px}.orbit-caption{display:flex;justify-content:space-between;align-items:center;gap:20px;font-size:10px;padding:0 5px 25px}.studio-manifesto{padding-top:100px}.studio-manifesto h2{font-size:clamp(45px,7vw,115px);line-height:1.05;letter-spacing:-.065em;margin:70px 0 45px;max-width:1250px}.studio-manifesto h2 span{opacity:.5}.studio-copy{display:grid;grid-template-columns:1fr 1fr;gap:35px;width:53%;margin-left:auto;font-size:16px;line-height:1.45}.studio-diptych{display:grid;grid-template-columns:1.15fr 1fr;gap:16%;margin-top:150px;align-items:center}.studio-film-still{margin:0;transform:rotate(-4deg);padding:0 10px}.studio-film-still button{display:block;position:relative;width:100%}.studio-film-still img{aspect-ratio:4/5;object-fit:cover}.studio-film-still button>span{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);background:var(--paper);width:115px;height:115px;display:grid;place-items:center;border-radius:50%;font-size:13px}.studio-film-still figcaption{font-size:10px;margin-top:12px}.studio-photo-note>span{font-size:11px}.studio-photo-note h2{font-size:clamp(48px,6.5vw,108px);letter-spacing:-.065em;line-height:1;margin:35px 0}.studio-photo-note p{font-size:16px;line-height:1.45;max-width:320px}.studio-practice{padding-top:160px}.studio-practice-grid{display:grid;grid-template-columns:1.15fr 1fr;gap:16%;margin-top:60px}.studio-practice-grid h2{font-size:clamp(45px,5vw,85px);line-height:1.05;letter-spacing:-.06em}.studio-practice .services{margin-top:0}.studio-practice .text-link{font-size:13px}.studio-beliefs{display:grid;grid-template-columns:repeat(3,1fr);gap:8%;margin-top:140px}.studio-beliefs article{border-top:1px solid var(--line);padding-top:25px}.studio-beliefs article>span{font-size:27px;letter-spacing:-1px}.studio-beliefs p{font-size:14px;line-height:1.45;margin-top:22px;max-width:280px}
+.contact-page{padding-top:42px}.contact-page>.page-title{font-size:clamp(100px,16vw,260px);margin-top:65px}.contact-page-grid{display:grid;grid-template-columns:1fr 1.15fr;gap:15%;margin-top:75px}.contact-page-note>span{font-size:30px;letter-spacing:-1px}.contact-page-note>p{font-size:16px;line-height:1.45;margin-top:25px;max-width:310px}.contact-page-note .contact-concept-note{font-size:11px;opacity:.7;margin-top:35px;max-width:280px}.contact-stamp{font-family:var(--display);font-size:55px;letter-spacing:-5px;transform:rotate(-12deg);margin-top:60px;display:inline-flex;align-items:center;padding:25px;border:2px solid currentColor;border-radius:50%}.contact-stamp>span{display:inline-block;animation:stamp-orbit 8s ease-in-out infinite}.page-brief-form{margin-top:0}.page-brief-form .form-row{grid-template-columns:1fr 1fr;gap:30px}.page-brief-form label{font-size:12px;margin-bottom:35px}.page-brief-form input,.page-brief-form select,.page-brief-form textarea{font-size:18px;padding:16px 0}.page-brief-form textarea{min-height:155px}.contact-faq{padding-top:140px}.contact-faq-grid{display:grid;grid-template-columns:1fr 1fr;gap:10%;padding-top:45px}.contact-faq details{border-bottom:1px solid var(--line);padding-bottom:25px}.contact-faq summary{font-size:22px;letter-spacing:-.8px;list-style:none;cursor:pointer;display:flex;justify-content:space-between;gap:30px}.contact-faq summary::-webkit-details-marker{display:none}.contact-faq summary>span{font-size:28px;transition:transform .3s}.contact-faq details[open] summary>span{transform:rotate(45deg)}.contact-faq details p{font-size:15px;line-height:1.5;margin:25px 0 0;max-width:420px}.contact-dialog form{margin-top:40px}.effects-paused .contact-stamp>span{animation-play-state:paused}
+@keyframes stamp-orbit{0%,100%{transform:translateY(0)}50%{transform:translateY(-10px)}}
+@media(min-width:1700px){.studio-hero{min-height:820px}.orbit-scene{min-height:640px}.archive-hero{gap:14%}}
+@media(max-width:1023px){.archive-hero{gap:7%}.archive-title>p{font-size:14px}.studio-hero{min-height:490px}.studio-title .page-title{font-size:12vw}.orbit-scene{min-height:400px}.orbit-caption{font-size:8px;gap:10px}.orbit-caption button{font-size:8px}.studio-copy{width:65%;font-size:14px}.studio-diptych,.studio-practice-grid{gap:10%}.studio-photo-note p{font-size:14px}.studio-practice-grid h2{font-size:5vw}.studio-beliefs{gap:5%}.studio-beliefs article>span{font-size:22px}.contact-page-grid{gap:10%}.page-brief-form .form-row{grid-template-columns:1fr;gap:0}.contact-page-note>p{font-size:14px}}
+@media(max-width:639px){.page-eyebrow{font-size:9px;gap:25px}.page-eyebrow>span:last-child{text-align:right;max-width:130px}.page-title{font-size:22vw}.archive-intro,.studio-intro,.contact-page{padding-top:20px}.archive-hero{grid-template-columns:1fr;gap:40px;margin-top:35px}.archive-title .page-title{font-size:26vw}.archive-title>p{margin-top:30px;max-width:270px}.archive-title>.text-link{margin-top:22px}.archive-portrait{width:88%;margin-left:auto}.archive-list{padding-top:80px}.archive-list-heading{align-items:start;flex-direction:column;gap:25px;padding-top:30px;margin-bottom:35px}.archive-list-heading h2{font-size:12vw}.page-next{margin-top:80px;padding-top:25px;gap:25px}.page-next>span{font-size:10px}.page-next>a{font-size:10vw;gap:25px}.studio-hero{display:block;margin-top:35px;min-height:0}.studio-title .page-title{font-size:27vw}.studio-title>p{margin-top:25px;font-size:13px}.orbit-figure{margin-top:-10px;margin-left:8%;width:92%}.orbit-scene{height:380px;min-height:0;flex:auto}.orbit-caption{font-size:9px;padding-bottom:0}.orbit-caption button{font-size:9px}.studio-manifesto{padding-top:85px}.studio-manifesto h2{font-size:11vw;margin:40px 0 30px}.studio-copy{width:100%;grid-template-columns:1fr;gap:20px;font-size:15px}.studio-diptych{grid-template-columns:1fr;gap:55px;margin-top:90px}.studio-film-still{width:82%;margin-left:12px}.studio-photo-note{margin-left:12%}.studio-photo-note h2{font-size:17vw;margin:25px 0}.studio-photo-note p{font-size:15px;max-width:290px}.studio-practice{padding-top:90px}.studio-practice-grid{grid-template-columns:1fr;gap:35px;margin-top:40px}.studio-practice-grid h2{font-size:12vw}.studio-beliefs{grid-template-columns:1fr;gap:35px;margin-top:70px}.studio-beliefs article{padding-top:20px}.studio-beliefs article>span{font-size:27px}.studio-beliefs p{font-size:14px;margin-top:15px}.contact-page>.page-title{font-size:27vw;margin-top:40px}.contact-page-grid{grid-template-columns:1fr;gap:45px;margin-top:40px}.contact-page-note{position:relative;padding-right:70px}.contact-page-note>span{font-size:25px}.contact-page-note>p{font-size:14px}.contact-stamp{position:absolute;right:0;top:0;margin-top:0;font-size:23px;letter-spacing:-2px;padding:17px;border-width:1px}.contact-page-note .contact-concept-note{font-size:10px;margin-top:22px}.page-brief-form label{margin-bottom:25px}.page-brief-form input,.page-brief-form select,.page-brief-form textarea{font-size:16px}.contact-faq{padding-top:80px}.contact-faq .section-label{display:flex;flex-direction:column;gap:8px}.contact-faq-grid{grid-template-columns:1fr;gap:30px;padding-top:30px}.contact-faq summary{font-size:21px;line-height:1.15}.contact-faq details p{font-size:14px}.menu-dialog nav>a{font-size:14vw;line-height:1.4}.menu-dialog>p{margin-top:45px}}
+@media(prefers-reduced-motion:reduce){.contact-stamp>span{animation:none}}
+
+/* Final layout refinements: quiet form focus, stable controls, and room for answers. */
+form :is(input, select, textarea):focus {
+  outline: none;
+  outline-offset: 0;
+  border-bottom-color: var(--ink);
+  box-shadow: 0 1px 0 var(--ink);
+}
+.motion-toggle {
+  width: 138px;
+  height: 36px;
+  justify-content: space-between;
+  gap: 0;
+  white-space: nowrap;
+  line-height: 1;
+}
+.motion-toggle > span { width: 12px; flex: 0 0 12px; text-align: center; }
+.disclosure-group { position: relative; overflow: clip; }
+.contact-faq-grid { align-items: start; }
+.services summary[aria-expanded="false"] .detail-sign,
+.contact-faq summary[aria-expanded="false"] > span { transform: rotate(0); }
+.intro-main { grid-column: 2; }
+.work-heading, .approach-grid, .studio-practice-grid { margin-top: 0; }
+.contact-headline { margin-top: 0; }
+.archive-hero, .studio-hero, .contact-page > .page-title { margin-top: 15px; }
+.studio-manifesto h2 { margin-top: 0; }
+.contact-faq-grid { padding-top: 0; }
+@media(max-width:639px) {
+  .intro-main { grid-column: auto; }
+  .motion-toggle { width: 112px; height: 32px; }
+  .archive-hero, .studio-hero, .contact-page > .page-title { margin-top: 15px; }
+}
+
+/* Circular navigation: the close glyph occupies the opener's exact centre. */
+.menu-dialog[open]{animation:none}
+.menu-dialog::backdrop{background:transparent;backdrop-filter:none}
+.menu-dialog .close-button{position:fixed;right:auto;top:var(--menu-y);left:var(--menu-x);width:26px;height:26px;transform:translate(-50%,-50%);font-size:0;gap:0;justify-content:center;padding:0}
+.menu-dialog .close-button span{display:block;font-size:26px;line-height:.7;transform-origin:center}
+.menu-dialog .dialog-top{min-height:var(--header-height,76px)}
+
+/* Hold the resting pose until the pointer leaves, avoiding a second hover spin. */
+.menu-toggle.menu-returned .menu-glyph{transition:none;transform:rotate(0deg)}
+
+/* Studio opens with one uninterrupted, full-width introduction. */
+.studio-about{padding-top:clamp(48px,6.5vw,112px);padding-bottom:clamp(60px,8vw,136px)}
+.studio-about-heading{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip-path:inset(50%);white-space:nowrap;border:0}
+.studio-about-copy{width:100%;max-width:none;font-size:clamp(32px,5.2vw,88px);line-height:1.13;letter-spacing:-.052em;font-weight:400;text-wrap:pretty}
+.studio-about + .studio-manifesto{padding-top:32px}
+@media(max-width:639px){.studio-about{padding-top:44px;padding-bottom:64px}.studio-about-copy{font-size:clamp(29px,7.2vw,46px);line-height:1.18;letter-spacing:-.04em}.studio-about + .studio-manifesto{padding-top:24px}}
+
+/* Inline image studies: CSS-only reveals, with the same treatment on focus. */
+.studio-word{position:relative;display:inline-block;white-space:nowrap;cursor:crosshair;text-decoration-line:underline;text-decoration-thickness:1px;text-underline-offset:.1em;text-decoration-color:color-mix(in srgb,currentColor 38%,transparent)}
+.studio-word-preview{position:absolute;left:50%;top:calc(100% + .12em);width:clamp(140px,17vw,240px);aspect-ratio:1.25;pointer-events:none;opacity:0;transform:translate(-50%,22px) rotate(-9deg) scale(.85);transform-origin:50% 0;transition:opacity .22s ease,transform .55s cubic-bezier(.22,1,.36,1);z-index:5}
+.studio-word-preview img{width:100%;height:100%;object-fit:cover;border:4px solid var(--paper);box-shadow:0 5px 18px #191b1324}
+.studio-word-image .studio-word-preview{aspect-ratio:.8;transform:translate(-50%,22px) rotate(8deg) scale(.85)}
+.studio-word-feeling .studio-word-preview{aspect-ratio:.85;transform:translate(-50%,22px) rotate(-6deg) scale(.85)}
+.studio-word:is(:hover,:focus-visible){z-index:6;text-decoration-color:currentColor}
+.studio-word:focus-visible{outline:1px solid currentColor;outline-offset:5px}
+.studio-word:is(:hover,:focus-visible) .studio-word-preview{opacity:1;transform:translate(-50%,0) rotate(4deg) scale(1)}
+.studio-word-image:is(:hover,:focus-visible) .studio-word-preview{transform:translate(-50%,0) rotate(-5deg) scale(1)}
+.studio-word-feeling:is(:hover,:focus-visible) .studio-word-preview{transform:translate(-50%,0) rotate(3deg) scale(1)}
+.studio-pause{display:inline-block;width:.72em;height:.72em;vertical-align:-.035em;margin:0 .09em;transition:transform .7s cubic-bezier(.22,1,.36,1)}
+.studio-pause:hover{transform:rotate(180deg)}
+@media(max-width:639px){.studio-word-preview{width:135px}}
+@media(prefers-reduced-motion:reduce){.studio-word-preview,.studio-pause{transition:none}.studio-pause:hover{transform:none}}
+.effects-paused .studio-word-preview,.effects-paused .studio-pause{transition:none}
+
+/* A compact footer; all project enquiries use the dedicated contact page. */
+.contact{padding-top:80px}
+.footer-middle{margin-top:0;border-top:1px solid var(--line);padding-top:24px}
+@media(max-width:639px){.contact{padding-top:56px}}

@@ -5,7 +5,7 @@
   "description": "SOL\u00cb, an independent creative production portfolio concept",
   "scripts": {
     "dev": "python3 -m http.server 4173 --directory dist",
-    "check": "node --check dist/app.js && node --check dist/disclosures.js",
+    "check": "node --check src/app.js && node --check src/disclosures.js",
     "pages": "python3 scripts/build-pages.py",
     "build": "python3 scripts/build-pages.py && node scripts/build-vendor.mjs"
   },

@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <style>html.hero-pending .hero{opacity:0}@media(prefers-reduced-motion:reduce){html.hero-pending .hero{opacity:1}}</style>
+  <script>
+    // Set before the first paint; leave the page readable if the module fails.
+    try {
+      if (location.pathname === '/' && !matchMedia('(prefers-reduced-motion: reduce)').matches && sessionStorage.getItem('sole-motion') !== 'paused') {
+        document.documentElement.classList.add('hero-pending');
+        window.soleHeroFallback = setTimeout(() => document.documentElement.classList.remove('hero-pending'), 5000);
+      }
+    } catch (_) {}
+  </script>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#dce348">
+  <meta name="description" content="SOLË is a creative production concept. Independent minds, collective energy. Film, photography and creative direction.">
+  <meta property="og:title" content="SOLË / Creative production">
+  <meta property="og:description" content="Independent minds. Collective energy. A creative production concept.">
+  <meta property="og:image" content="https://sole-creative-production.upliftingeave.chatgpt.site/assets/studio-poster.jpg">
+  <title>SOLË / Creative production</title>
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="preload" href="/assets/archivo-black.ttf" as="font" type="font/ttf" crossorigin>
+  <link rel="preload" href="/assets/dm-sans.ttf" as="font" type="font/ttf" crossorigin>
+  <link rel="stylesheet" href="/style.css?v=transparent-blend-header">
+  <link rel="stylesheet" href="/vendor/lenis.css">
+  <link rel="stylesheet" href="/effects.css">
+  <link rel="stylesheet" href="/pages.css?v=contact-page-only">
+  <script type="module" src="/app.js?v=contact-page-only"></script>
+</head>
+<body id="top" data-page="home">
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <a class="brand" href="/" aria-label="SOLË home">SOLË<span>®</span></a>
+    <p class="header-description">Independent creative<br>production company.</p>
+    <nav class="desktop-nav" aria-label="Main navigation"><a href="/work/">Work <sup>(04)</sup></a><a href="/studio/">Studio</a><a href="/contact/">Let’s talk <span aria-hidden="true">↗</span></a></nav>
+    <button class="menu-toggle" aria-label="Open menu" aria-haspopup="dialog" aria-expanded="false"><span>Menu</span><span class="menu-glyph" aria-hidden="true">＋</span></button>
+  </header>
+
+  <main id="main">
+    <section class="hero" id="hero" aria-label="SOLË creative production">
+      <div class="hero-type"><h1 aria-label="SOLË"><span>S</span><span>O</span><span>L</span><span>Ë</span></h1><span class="wordmark-register" aria-hidden="true">®</span></div>
+      <div class="hero-caption"><p>Independent minds.<br>Collective energy.</p><p>We make films, images,<br>and things you feel.</p><a href="/work/" class="text-link">Discover our work <span aria-hidden="true">↙</span></a></div>
+      <div class="hero-media">
+        <button class="hero-film" data-film aria-label="Play the SOLË studio film">
+          <video id="hero-video" muted loop playsinline preload="metadata" poster="/assets/studio-poster.jpg" aria-hidden="true"><source src="/assets/sole-studio.mp4" type="video/mp4"></video>
+          <span class="play-disc"><span class="play-mark" aria-hidden="true">↗</span><span>Inside SOLË</span><small>Play film</small></span>
+        </button>
+        <button class="hero-still" data-project="soft-focus" aria-label="Explore Soft Focus"><img src="/assets/editorial-olive.webp" alt="Sunlit fashion portrait in an oversized olive jacket" fetchpriority="high"><span class="image-arrow" aria-hidden="true">↗</span></button>
+        <button class="motion-toggle" aria-pressed="false">Pause motion <span aria-hidden="true">Ⅱ</span></button>
+      </div>
+      <div class="media-caption"><span>A feeling. Made real.</span><span>Film & photography by instinct.</span><span class="hero-index">Selected impressions / 2026</span></div>
+    </section>
+
+    <section class="intro section-pad" id="studio">
+      
+      <div class="intro-main"><h2 class="reveal">Good people.<br>Bold ideas.<br><span class="soft-word">Real feeling.</span></h2><div class="intro-bottom"><p>We’re SOLË. A creative production company bringing curious minds together to make film and photography with a point of view.</p><p>From the first scribble to the final frame, we get close, go all in, and make something worth feeling.</p><a href="/studio/" class="text-link">Meet the studio <span aria-hidden="true">↗</span></a></div></div>
+    </section>
+
+    <section class="work section-pad" id="work">
+      
+      <div class="work-heading"><h2 class="reveal">Selected<br>work<sup>(04)</sup></h2><div class="work-tools"><p>A collection of visual studies.<br>Every project starts with a feeling.</p><div class="filters" role="group" aria-label="Filter projects"><button class="active" data-filter="all" aria-pressed="true">All</button><button data-filter="film" aria-pressed="false">Film</button><button data-filter="stills" aria-pressed="false">Stills</button></div></div></div>
+      <div class="project-grid">
+        <article class="project project-large reveal" data-kind="stills"><button class="project-image" data-project="soft-focus" aria-label="View Soft Focus project"><img src="/assets/editorial-olive.webp" alt="A model turning toward the light in an olive jacket" loading="lazy"><span class="project-hover" aria-hidden="true">Explore ↗</span></button><div class="project-caption"><h3><button data-project="soft-focus">Soft Focus</button></h3><span>Fashion / Creative direction</span><span>01</span></div></article>
+        <article class="project project-offset reveal" data-kind="stills"><button class="project-image" data-project="salt-and-sun" aria-label="View Salt & Sun project"><img src="/assets/editorial-salt.webp" alt="Fashion portrait beside a sunlit pink salt lake" loading="lazy"><span class="project-hover" aria-hidden="true">Explore ↗</span></button><div class="project-caption"><h3><button data-project="salt-and-sun">Salt & Sun</button></h3><span>Editorial / Photography</span><span>02</span></div></article>
+        <article class="project project-wide reveal" data-kind="stills"><button class="project-image" data-project="after-hours" aria-label="View After Hours project"><img src="/assets/editorial-monochrome.webp" alt="Black and white fashion contact sheet with sculptural poses" loading="lazy"><span class="project-hover" aria-hidden="true">Explore ↗</span></button><div class="project-caption"><h3><button data-project="after-hours">After Hours</button></h3><span>Image-making / Art direction</span><span>03</span></div></article>
+        <article class="project project-small reveal" data-kind="film"><button class="project-image" data-project="off-script" aria-label="View Off Script film project"><img src="/assets/studio-detail.jpg" alt="A candid moment behind the scenes of a fashion shoot" loading="lazy"><span class="project-hover" aria-hidden="true">Play film ↗</span></button><div class="project-caption"><h3><button data-project="off-script">Off Script</button></h3><span>Film / Behind the scenes</span><span>04</span></div></article>
+      </div>
+      <p class="concept-caption">Concept productions. Imagery curated for this independent portfolio study.</p>
+    </section>
+
+    <section class="approach section-pad" id="approach">
+      
+      <div class="approach-grid"><div class="approach-sticky"><h2 class="reveal">Small crew.<br>Big picture.</h2><div class="studio-photo"><img src="/assets/studio-poster.jpg" alt="A photographer working on set" loading="lazy"><span>Some of the best ideas happen on set.</span></div></div><div class="approach-content"><p class="approach-lead reveal">A good idea is only the beginning. We build the team, shape the world, and see it through.</p><div class="services">
+        <details open><summary><span>Creative direction</span><span class="detail-sign" aria-hidden="true">＋</span></summary><div class="service-body"><p>Finding the idea, the mood, and the reason to care. We give each production its own visual world.</p><ul><li>Concept development</li><li>Art direction</li><li>Visual research</li></ul></div></details>
+        <details><summary><span>Production</span><span class="detail-sign" aria-hidden="true">＋</span></summary><div class="service-body"><p>The right people make all the difference. We bring the crew, cast, and location together around one shared vision.</p><ul><li>Film & photography</li><li>Casting & crew</li><li>Locations & set design</li></ul></div></details>
+        <details><summary><span>Post-production</span><span class="detail-sign" aria-hidden="true">＋</span></summary><div class="service-body"><p>Every cut, colour, and sound earns its place. We stay with the work until the last detail feels right.</p><ul><li>Editing & colour</li><li>Sound & music</li><li>Retouching & finishing</li></ul></div></details>
+      </div><a class="text-link" href="/contact/">Bring us your idea <span aria-hidden="true">↗</span></a></div></div>
+    </section>
+
+    <section class="manifesto" aria-label="The SOLË spirit"><div class="manifesto-track"><span>ALL IN. ALL SOLË.</span><span aria-hidden="true">ALL IN. ALL SOLË.</span></div><div class="manifesto-note"><span>Independent by nature.</span><span>Collaborative by choice.</span><button class="marquee-toggle" aria-pressed="false" aria-label="Pause moving text">Pause <span aria-hidden="true">Ⅱ</span></button></div></section>
+
+    <footer id="contact" class="contact section-pad">
+      <div class="footer-middle"><p>Big idea, loose thought,<br>or a very good question.</p><a class="text-link" href="/contact/">Start a conversation <span aria-hidden="true">↗</span></a><a class="text-link" href="#top">Back to the good stuff <span aria-hidden="true">↑</span></a></div>
+      <div class="footer-wordmark" aria-hidden="true">SOLË<span>®</span></div>
+      <div class="footer-bottom"><span>© SOLË 2026</span><span>Independent portfolio concept</span><button data-effects aria-pressed="false">Motion on</button><button data-credits>About this concept <span aria-hidden="true">↗</span></button></div>
+    </footer>
+  </main>
+
+  <dialog data-lenis-prevent class="menu-dialog" aria-label="Navigation"><div class="dialog-top"><a class="brand" href="/">SOLË<span>®</span></a><button class="close-button" data-close aria-label="Close menu">Close <span aria-hidden="true">＋</span></button></div><nav aria-label="Expanded navigation"><a href="/"><small>00</small>Home<span>↗</span></a><a href="/work/"><small>01</small>Work<span>↗</span></a><a href="/studio/"><small>02</small>Studio<span>↗</span></a><a href="/contact/"><small>03</small>Let’s talk<span>↗</span></a></nav><p>Independent minds. Collective energy.</p></dialog>
+
+  <dialog data-lenis-prevent class="project-dialog" aria-labelledby="project-title"><div class="dialog-top"><span class="brand">SOLË<span>®</span></span><button class="close-button" data-close aria-label="Close project">Close project <span aria-hidden="true">×</span></button></div><div class="project-dialog-content"></div></dialog>
+
+  <dialog data-lenis-prevent class="film-dialog" aria-labelledby="film-title"><div class="dialog-top"><h2 id="film-title">Inside SOLË <small>/ A studio impression</small></h2><button class="close-button" data-close aria-label="Close film">Close film <span aria-hidden="true">×</span></button></div><video controls playsinline preload="none" poster="/assets/studio-poster.jpg"><source src="/assets/sole-studio.mp4" type="video/mp4"></video><p>Reference footage supplied for this concept. Original audio omitted.</p></dialog>
+
+  <dialog data-lenis-prevent class="credits-dialog" aria-labelledby="credits-title"><div class="dialog-top"><span class="brand">SOLË<span>®</span></span><button class="close-button" data-close aria-label="Close concept information">Close <span aria-hidden="true">×</span></button></div><div class="credits-content"><h2 id="credits-title">A study in<br>good energy.</h2><p>SOLË is an independent website and identity concept for a fictional creative production company. Project names and services are illustrative. No client relationships are implied.</p><p>Editorial reference imagery was curated through Cosmos. Film reference was supplied for the concept. All original imagery belongs to its respective creators.</p><a class="text-link" href="https://www.cosmos.so/search/elements/fashion%20editorial%20analog" target="_blank" rel="noreferrer">Explore the image references ↗</a><p>Design inspiration: <a href="https://www.bratiiev.com/" target="_blank" rel="noreferrer">Bohdan Ratiiev</a>, <a href="https://labellavista.es/" target="_blank" rel="noreferrer">Labellavista</a>, <a href="https://kissbranding.co.uk/" target="_blank" rel="noreferrer">Kiss</a>, and <a href="https://mobius.framer.website/" target="_blank" rel="noreferrer">Möbius</a>.</p></div></dialog>
+  <noscript><style>.reveal{opacity:1;transform:none}.hero-type h1 span{opacity:1;transform:none}</style><p class="noscript-note">Enable JavaScript to explore projects and play the studio film.</p></noscript>
+</body>
+</html>

@@ -1,9 +1,17 @@
 """Generate the three progressive HTML pages from SOLË's shared shell."""
 from pathlib import Path
 import re
+import shutil
 
 ROOT = Path(__file__).resolve().parents[1]
-home_path = ROOT / 'dist/index.html'
+SRC = ROOT / 'src'
+DIST = ROOT / 'dist'
+
+# Start from editable source files and regenerate a clean deployment folder.
+shutil.rmtree(DIST, ignore_errors=True)
+shutil.copytree(SRC, DIST)
+
+home_path = SRC / 'index.html'
 home = home_path.read_text()
 home = re.sub(r'(src|href|poster)="(assets/|style.css|app.js|favicon.svg)', r'\1="/\2', home)
 home = home.replace('<script src="/app.js" defer></script>', '<script type="module" src="/app.js"></script>')
@@ -20,7 +28,7 @@ home = home.replace('data-lenis-prevent data-lenis-prevent', 'data-lenis-prevent
 home = home.replace('class="brand" href="#top"', 'class="brand" href="/"')
 if 'data-effects' not in home:
     home = home.replace('<span>Independent portfolio concept</span><button data-credits>', '<span>Independent portfolio concept</span><button data-effects aria-pressed="false">Motion on</button><button data-credits>')
-home_path.write_text(home)
+(DIST / 'index.html').write_text(home)
 
 main_start = home.index('  <main id="main">')
 main_end = home.index('  </main>', main_start) + len('  </main>')
@@ -62,7 +70,7 @@ for slug, (title, content) in pages.items():
     page = page.replace('data-page="home"', f'data-page="{slug}"')
     page = page.replace('<title>SOLË / Creative production</title>', f'<title>{title} / SOLË</title>')
     page = page.replace('content="SOLË / Creative production"', f'content="{title} / SOLË"')
-    path = ROOT / 'dist' / slug / 'index.html'
+    path = DIST / slug / 'index.html'
     path.parent.mkdir(exist_ok=True)
     path.write_text(page)
 print('Generated /work/, /studio/, and /contact/.')

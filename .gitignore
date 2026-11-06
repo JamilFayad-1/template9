@@ -45,4 +45,5 @@ venv/
 *.swo
 *~
 
-# Keep dist/ tracked: it contains the ready-to-deploy static site.
+# Generated deployment output
+dist/
