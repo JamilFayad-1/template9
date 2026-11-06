@@ -4,7 +4,6 @@
   <meta charset="UTF-8">
   <style>html.hero-pending .hero{opacity:0}@media(prefers-reduced-motion:reduce){html.hero-pending .hero{opacity:1}}</style>
   <script>
-    // Set before the first paint; leave the page readable if the module fails.
     try {
       if (location.pathname === '/' && !matchMedia('(prefers-reduced-motion: reduce)').matches && sessionStorage.getItem('sole-motion') !== 'paused') {
         document.documentElement.classList.add('hero-pending');
